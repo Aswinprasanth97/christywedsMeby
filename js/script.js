@@ -120,6 +120,42 @@
     }
   }
 
+  /* ---------- Animated background: drifting petals ---------- */
+  function initBackground() {
+    var host = $("#bgFx");
+    if (!host) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    // Fewer petals on small screens to keep things light.
+    var count = window.innerWidth < 640 ? 18 : 34;
+    var frag = document.createDocumentFragment();
+
+    function rand(min, max) { return Math.random() * (max - min) + min; }
+
+    for (var i = 0; i < count; i++) {
+      var p = document.createElement("span");
+      p.className = "petal" + (Math.random() < 0.35 ? " gold" : "");
+
+      var size = rand(12, 30);
+      var duration = rand(10, 20);
+      var delay = -rand(0, duration); // negative delay = staggered, already in motion
+      var drift = rand(-8, 8);        // horizontal sway in vw
+      var spin = rand(180, 720) * (Math.random() < 0.5 ? -1 : 1);
+
+      p.style.left = rand(-2, 100) + "vw";
+      p.style.width = size + "px";
+      p.style.height = size + "px";
+      p.style.animationDuration = duration + "s";
+      p.style.animationDelay = delay + "s";
+      p.style.setProperty("--drift", drift + "vw");
+      p.style.setProperty("--spin", spin + "deg");
+      p.style.opacity = rand(0.35, 0.8).toFixed(2);
+
+      frag.appendChild(p);
+    }
+    host.appendChild(frag);
+  }
+
   /* ---------- Countdown ---------- */
   function initCountdown() {
     var target = new Date(WEDDING.dateLocalISO).getTime();
@@ -530,6 +566,7 @@
   /* ---------- Boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initAOS();
+    initBackground(); // aura + drifting petals
     initCountdown();
     initRSVP();
     initMusic(); // defines startMusic()
