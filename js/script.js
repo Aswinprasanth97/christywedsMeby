@@ -216,29 +216,31 @@
     var thanksName = $("#thanksName");
     var submitBtn = form.querySelector('button[type="submit"]');
 
-    function showThanks(name) {
+    function showThanks(name, opts) {
+      opts = opts || {};
       if (thanksName)
         thanksName.textContent = (name || "").split(" ")[0] || "friend";
       form.style.display = "none";
       if (thanks) {
         thanks.style.display = "block";
-        thanks.scrollIntoView({ behavior: "smooth", block: "center" });
+        if (!opts.silent)
+          thanks.scrollIntoView({ behavior: "smooth", block: "center" });
       }
-      toast("Thank you for your response ❤️");
+      if (!opts.silent) toast("Thank you for your response ❤️");
     }
 
-    // Restore a friendly note if they've already responded on this device
+    // If they've already responded on this device, lock the form.
     var existing = loadRsvps();
     if (existing.length) {
       var last = existing[existing.length - 1];
-      var note = $("#rsvpReturning");
-      if (note && last && last.name) {
-        note.textContent =
-          "You've already responded as " +
-          last.name +
-          ". You may submit again to update your response.";
-        note.style.display = "block";
-      }
+      showThanks(last && last.name ? last.name : "", { silent: true });
+
+      var subtitle = $("#thanksSubtitle");
+      if (subtitle) subtitle.textContent = "You've already responded ❤️";
+
+      // No re-opening the form — keep the response locked in.
+      var againBtn = $("#rsvpAgain");
+      if (againBtn) againBtn.style.display = "none";
     }
 
     // Access controls safely (form.name would return the <form>'s own name prop)
