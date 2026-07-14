@@ -182,19 +182,31 @@ body {
 .date-day, .date-month {
   font-family: "Lato", sans-serif;
   letter-spacing: 0.35em;
+  text-indent: 0.35em; /* offset the trailing letter-spacing so the word stays centered */
   text-transform: uppercase;
+  text-align: center;
   color: var(--secondary);
   font-weight: 700;
   font-size: 0.95rem;
+  white-space: nowrap;
 }
 .date-num {
   font-family: "Cormorant Garamond", serif;
   color: var(--primary);
   font-weight: 700;
-  font-size: clamp(3.4rem, 11vw, 5.5rem);
+  font-size: clamp(2.8rem, 13vw, 5.5rem);
   line-height: 0.95;
+  text-align: center;
 }
 .date-time { color: var(--gold); font-weight: 700; letter-spacing: 0.2em; }
+
+@media (max-width: 420px) {
+  .date-day, .date-month {
+    letter-spacing: 0.18em;
+    text-indent: 0.18em;
+    font-size: 0.78rem;
+  }
+}
 
 /* ---------- Countdown ---------- */
 .count-box {
