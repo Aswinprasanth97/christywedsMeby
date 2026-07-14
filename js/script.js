@@ -347,7 +347,38 @@
     }
   }
 
-  /* ---------- Add to Calendar (.ics) ---------- */
+  /* ---------- Add to Calendar ---------- */
+  function isMobile() {
+    return (
+      /Android|iPhone|iPad|iPod|Mobile|Opera Mini|IEMobile|BlackBerry/i.test(
+        navigator.userAgent
+      ) || window.matchMedia("(max-width: 768px)").matches
+    );
+  }
+
+  function googleCalUrl() {
+    return (
+      "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+      "&text=" + encodeURIComponent(WEDDING.coupleFull + " — Wedding") +
+      "&dates=" + WEDDING.icsStartUTC + "/" + WEDDING.icsEndUTC +
+      "&details=" +
+        encodeURIComponent(
+          "Holy Sacrament of Matrimony. We would be honoured by your presence."
+        ) +
+      "&location=" + encodeURIComponent(WEDDING.address)
+    );
+  }
+
+  // Mobile → open Google Calendar directly; desktop → download the .ics file.
+  function addToCalendar() {
+    if (isMobile()) {
+      window.open(googleCalUrl(), "_blank", "noopener");
+      toast("Opening Google Calendar…");
+    } else {
+      downloadICS();
+    }
+  }
+
   function downloadICS() {
     var uid = "mc-wedding-" + Date.now() + "@invitation";
     var lines = [
@@ -542,7 +573,7 @@
         switch (action) {
           case "calendar":
             e.preventDefault();
-            downloadICS();
+            addToCalendar();
             break;
           case "copy":
             e.preventDefault();
