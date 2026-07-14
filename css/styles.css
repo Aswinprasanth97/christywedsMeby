@@ -152,10 +152,11 @@ body {
 
 /* ---------- Hero ---------- */
 .hero-names {
-  font-family: "Great Vibes", cursive;
+  font-family: "Alex Brush", "Great Vibes", cursive;
   color: var(--primary);
-  line-height: 1;
-  font-size: clamp(3.2rem, 12vw, 7rem);
+  line-height: 1.05;
+  font-size: clamp(2.6rem, 11vw, 7rem);
+  white-space: nowrap;      /* keep each name on a single line */
 }
 .heart {
   color: var(--gold);
