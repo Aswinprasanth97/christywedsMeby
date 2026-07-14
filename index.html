@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meby &amp; Christy · Wedding Invitation — 16 November 2026</title>
+
+  <!-- SEO -->
+  <meta name="description" content="With the blessings of our families, Meby Abraham & Christy Thomas invite you to their wedding on Monday, 16 November 2026 at St. John the Baptist Jacobite Syrian Church, Kumarakom, Kerala." />
+  <meta name="keywords" content="Meby Abraham, Christy Thomas, wedding, Kerala Christian wedding, Jacobite Syrian, Kumarakom, invitation, 16 November 2026" />
+  <meta name="author" content="Meby Abraham & Christy Thomas" />
+  <meta name="theme-color" content="#183A73" />
+  <link rel="canonical" href="./" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="apple-touch-icon" href="images/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Meby & Christy · Wedding Invitation" />
+  <meta property="og:description" content="Together with their families, Meby & Christy request the honour of your presence — Monday, 16 November 2026, Kumarakom, Kerala." />
+  <meta property="og:image" content="images/og-image.svg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Meby & Christy · Wedding Invitation" />
+  <meta name="twitter:description" content="16 November 2026 · Kumarakom, Kerala. We would be honoured by your presence." />
+  <meta name="twitter:image" content="images/og-image.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (Play CDN — no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#183A73",
+            secondary: "#3A5F9B",
+            gold: "#C8A96A",
+            lightblue: "#EEF4FF",
+            ink: "#333333"
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', "cursive"],
+            display: ['"Cormorant Garamond"', "serif"],
+            body: ['"Lato"', "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- AOS animations (optional) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Wedding of Meby Abraham & Christy Thomas",
+    "startDate": "2026-11-16T11:00:00+05:30",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "St. John The Baptist Jacobite Syrian Church (Attamangalam Pally)",
+      "address": "Kottayam–Cherthala Road, Kumarakom, Kerala 686563, India"
+    },
+    "description": "Holy Sacrament of Matrimony followed by reception at the Parish Hall."
+  }
+  </script>
+</head>
+<body class="font-body text-ink">
+
+  <!-- ===================== LOADER ===================== -->
+  <div id="loader" role="dialog" aria-label="Wedding invitation intro">
+    <div class="loader-ring" id="loaderRing"></div>
+    <div class="loader-mono">Meby &amp; Christy</div>
+    <div class="loader-sub">A Celebration of Love</div>
+    <button id="enterBtn" class="btn btn-gold" type="button" style="display:none">
+      Open Invitation <span aria-hidden="true">&#9829;</span>
+    </button>
+    <p class="loader-hint" id="loaderHint" style="display:none">Best experienced with sound on <span aria-hidden="true">&#9834;</span></p>
+  </div>
+
+  <!-- ===================== DECORATIVE CORNER FLOWERS ===================== -->
+  <div class="corner-flower tl" aria-hidden="true"><img src="images/flowers/bouquet.svg" alt="" class="float-slow" loading="lazy" width="520" height="520" /></div>
+  <div class="corner-flower tr" aria-hidden="true"><img src="images/flowers/bouquet.svg" alt="" class="float-slower" loading="lazy" width="520" height="520" /></div>
+  <div class="corner-flower bl" aria-hidden="true"><img src="images/flowers/bouquet.svg" alt="" class="float-slower" loading="lazy" width="520" height="520" /></div>
+  <div class="corner-flower br" aria-hidden="true"><img src="images/flowers/bouquet.svg" alt="" class="float-slow" loading="lazy" width="520" height="520" /></div>
+
+  <!-- ===================== BACKGROUND MUSIC ===================== -->
+  <!-- Place an instrumental track at audio/instrumental.mp3 to enable playback. -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="audio/instrumental.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main class="relative" style="z-index:2">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="top" class="px-5 pt-16 pb-10 md:pt-24 md:pb-16">
+      <div class="max-w-3xl mx-auto text-center orna-frame bg-white/70 backdrop-blur-sm px-6 py-12 md:px-14 md:py-16" data-aos="fade">
+        <p class="eyebrow mb-6" data-aos="fade-up">The Wedding Celebration Of</p>
+
+        <!-- Bible verse -->
+        <div class="mb-8" data-aos="fade-up" data-aos-delay="80">
+          <p class="verse max-w-xl mx-auto">
+            &ldquo;So they are no longer two but one flesh. Therefore what God has joined together, let no one separate.&rdquo;
+          </p>
+          <p class="mt-3 eyebrow text-gold" style="letter-spacing:.3em">Matthew 19:6</p>
+        </div>
+
+        <div class="divider" aria-hidden="true">
+          <span class="line"></span><span class="dot"></span><span class="diamond"></span><span class="dot"></span><span class="line right"></span>
+        </div>
+
+        <p class="font-display italic text-secondary text-lg md:text-xl mt-6 mb-2" data-aos="fade-up" data-aos-delay="120">
+          By the Grace of God and with the blessings of our parents
+        </p>
+
+        <!-- Couple names -->
+        <div class="my-6" data-aos="zoom-in" data-aos-delay="150">
+          <h1 class="hero-names">Meby Abraham</h1>
+          <div class="heart my-1"><span class="heart-beat">&#9829;</span></div>
+          <h1 class="hero-names">Christy Thomas</h1>
+        </div>
+
+        <p class="font-display text-primary text-lg md:text-2xl max-w-xl mx-auto mt-6 leading-relaxed" data-aos="fade-up" data-aos-delay="180">
+          request the honour of your presence as we unite in the
+          <span class="text-gold italic">Holy Sacrament of Matrimony</span>.
+        </p>
+
+        <div class="mt-9 flex flex-wrap items-center justify-center gap-3" data-aos="fade-up" data-aos-delay="220">
+          <a href="#rsvp" class="btn btn-gold">RSVP Now</a>
+          <button class="btn btn-outline" data-action="calendar" type="button">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Add to Calendar
+          </button>
+        </div>
+
+        <div class="mt-10 section-sprig" aria-hidden="true">
+          <img src="images/flowers/sprig.svg" alt="" loading="lazy" width="300" height="120" class="mx-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DATE CARD ===================== -->
+    <section id="date" class="px-5 py-12 md:py-16">
+      <div class="max-w-md mx-auto card px-8 py-10 text-center" data-aos="fade-up">
+        <p class="eyebrow mb-6">Save the Date</p>
+        <div class="flex items-stretch justify-center gap-5">
+          <div class="flex flex-col justify-center">
+            <span class="date-day">Monday</span>
+          </div>
+          <div class="w-px bg-gold/50"></div>
+          <div>
+            <div class="date-num">16</div>
+          </div>
+          <div class="w-px bg-gold/50"></div>
+          <div class="flex flex-col justify-center">
+            <span class="date-month">November</span>
+            <span class="text-primary font-display text-xl mt-1">2026</span>
+          </div>
+        </div>
+        <div class="divider mt-6" aria-hidden="true">
+          <span class="line"></span><span class="diamond"></span><span class="line right"></span>
+        </div>
+        <p class="date-time text-lg">11:00 AM</p>
+        <p class="text-secondary mt-1 font-display text-lg">at St. John the Baptist Jacobite Syrian Church, Kumarakom</p>
+      </div>
+    </section>
+
+    <!-- ===================== COUNTDOWN ===================== -->
+    <section id="countdown-section" class="px-5 py-12 md:py-16">
+      <div class="max-w-2xl mx-auto text-center">
+        <p class="eyebrow mb-2" data-aos="fade-up">Counting Down To Our Big Day</p>
+        <h2 class="section-title text-3xl md:text-4xl mb-8" data-aos="fade-up">Forever Begins In</h2>
+
+        <div id="countdown" class="grid grid-cols-4 gap-3 md:gap-5 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="80">
+          <div class="count-box"><div id="cd-days" class="count-num">00</div><div class="count-label">Days</div></div>
+          <div class="count-box"><div id="cd-hours" class="count-num">00</div><div class="count-label">Hours</div></div>
+          <div class="count-box"><div id="cd-mins" class="count-num">00</div><div class="count-label">Minutes</div></div>
+          <div class="count-box"><div id="cd-secs" class="count-num">00</div><div class="count-label">Seconds</div></div>
+        </div>
+        <div id="countdown-done" style="display:none" class="font-script text-primary text-4xl md:text-5xl mt-4">
+          Today is the day! ❤️
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARENTS ===================== -->
+    <section id="parents" class="px-5 py-12 md:py-16">
+      <div class="max-w-5xl mx-auto text-center">
+        <p class="eyebrow mb-2" data-aos="fade-up">With the Blessings Of</p>
+        <h2 class="section-title text-3xl md:text-4xl mb-2" data-aos="fade-up">Our Beloved Families</h2>
+        <div class="divider" aria-hidden="true"><span class="line"></span><span class="diamond"></span><span class="line right"></span></div>
+
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8 mt-8 text-left">
+          <!-- Bride -->
+          <div class="card p-8 md:p-10 text-center" data-aos="fade-up">
+            <p class="eyebrow text-gold mb-1">The Bride</p>
+            <h3 class="font-script text-primary text-4xl md:text-5xl mb-4">Christy</h3>
+            <p class="text-secondary font-display text-lg leading-relaxed">
+              Daughter of
+            </p>
+            <p class="text-primary font-display text-xl md:text-2xl mt-1">Mr. Aby Abraham</p>
+            <p class="text-primary font-display text-xl md:text-2xl">Mrs. Somy Aby</p>
+            <div class="divider" aria-hidden="true"><span class="line"></span><span class="dot"></span><span class="line right"></span></div>
+            <p class="text-ink/80 leading-relaxed">
+              Cheppannookariyil House<br />
+              Kumarakom P.O.<br />
+              Kottayam
+            </p>
+          </div>
+
+          <!-- Groom -->
+          <div class="card p-8 md:p-10 text-center" data-aos="fade-up" data-aos-delay="100">
+            <p class="eyebrow text-gold mb-1">The Groom</p>
+            <h3 class="font-script text-primary text-4xl md:text-5xl mb-4">Meby</h3>
+            <p class="text-secondary font-display text-lg leading-relaxed">
+              Son of
+            </p>
+            <p class="text-primary font-display text-xl md:text-2xl mt-1">Mr. Thomas John <span class="text-secondary text-base italic">(Late)</span></p>
+            <p class="text-primary font-display text-xl md:text-2xl">Mrs. Rosamma Thomas</p>
+            <div class="divider" aria-hidden="true"><span class="line"></span><span class="dot"></span><span class="line right"></span></div>
+            <p class="text-ink/80 leading-relaxed">
+              Pulickalvila Veedu (Devadeyam)<br />
+              Powdikonam P.O.<br />
+              Trivandrum
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHURCH ===================== -->
+    <section id="church" class="px-5 py-12 md:py-16">
+      <div class="max-w-3xl mx-auto">
+        <div class="card-plain soft-panel p-8 md:p-12 text-center" data-aos="fade-up">
+          <img src="images/church-icon.svg" alt="Church" width="120" height="120" loading="lazy" class="mx-auto w-20 h-20 md:w-24 md:h-24" />
+          <p class="eyebrow text-gold mt-4 mb-2">The Ceremony</p>
+          <h2 class="section-title text-2xl md:text-4xl leading-tight">
+            St. John The Baptist<br class="hidden md:block" /> Jacobite Syrian Church
+          </h2>
+          <p class="text-secondary font-display italic text-lg mt-1">(Attamangalam Pally)</p>
+          <div class="divider" aria-hidden="true"><span class="line"></span><span class="diamond"></span><span class="line right"></span></div>
+          <p class="text-ink/85 leading-relaxed text-lg">
+            Kottayam–Cherthala Road<br />
+            Kumarakom<br />
+            Kerala – 686563
+          </p>
+          <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
+            <a class="btn"
+               href="https://www.google.com/maps/search/?api=1&query=St%20John%20The%20Baptist%20Jacobite%20Syrian%20Church%20Attamangalam%20Kumarakom%20Kerala"
+               target="_blank" rel="noopener" data-action="maps">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Open Location
+            </a>
+            <button class="btn btn-outline" data-action="copy" type="button">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy Address
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RECEPTION ===================== -->
+    <section id="reception" class="px-5 py-12 md:py-16">
+      <div class="max-w-2xl mx-auto text-center card p-8 md:p-12" data-aos="fade-up">
+        <p class="eyebrow text-gold mb-2">With Joy, We Invite You To The</p>
+        <h2 class="section-title text-3xl md:text-4xl">Reception</h2>
+        <div class="divider" aria-hidden="true"><span class="line"></span><span class="diamond"></span><span class="line right"></span></div>
+        <p class="font-display text-primary text-2xl md:text-3xl">At the Parish Hall</p>
+        <p class="text-secondary font-display italic text-lg mt-2">
+          (Parish Hall of St. John The Baptist Jacobite Syrian Church)
+        </p>
+        <p class="text-ink/70 mt-4">Following the Holy Matrimony · Monday, 16 November 2026</p>
+      </div>
+    </section>
+
+    <!-- ===================== RSVP ===================== -->
+    <section id="rsvp" class="px-5 py-12 md:py-16">
+      <div class="max-w-xl mx-auto">
+        <div class="text-center mb-8">
+          <p class="eyebrow mb-2" data-aos="fade-up">Kindly Respond</p>
+          <h2 class="section-title text-3xl md:text-4xl" data-aos="fade-up">Will You Join Us?</h2>
+          <div class="divider" aria-hidden="true"><span class="line"></span><span class="diamond"></span><span class="line right"></span></div>
+          <p class="text-ink/70" data-aos="fade-up">We would be delighted to celebrate with you. Please let us know by <strong>1 November 2026</strong>.</p>
+        </div>
+
+        <div class="card p-7 md:p-9" data-aos="fade-up" data-aos-delay="80">
+          <p id="rsvpReturning" class="text-secondary text-sm mb-4 thanks-msg p-3" style="display:none"></p>
+
+          <form id="rsvpForm" novalidate>
+            <div class="grid gap-5">
+              <div>
+                <label class="field-label" for="f-name">Name <span class="text-gold">*</span></label>
+                <input class="field" id="f-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required />
+              </div>
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="field-label" for="f-mobile">Mobile Number <span class="text-gold">*</span></label>
+                  <input class="field" id="f-mobile" name="mobile" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91 " required />
+                </div>
+                <div>
+                  <label class="field-label" for="f-email">Email <span class="text-ink/40 normal-case font-normal">(optional)</span></label>
+                  <input class="field" id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+                </div>
+              </div>
+
+              <div>
+                <span class="field-label">Will you be attending? <span class="text-gold">*</span></span>
+                <div class="grid grid-cols-2 gap-3 mt-1">
+                  <label class="radio-pill"><input type="radio" name="attending" value="Attending" /> Joyfully Attending</label>
+                  <label class="radio-pill"><input type="radio" name="attending" value="Not Attending" /> Regretfully Decline</label>
+                </div>
+              </div>
+
+              <div>
+                <label class="field-label" for="f-guests">Number of Guests</label>
+                <select class="field" id="f-guests" name="guests">
+                  <option value="1">1 — Just me</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5+</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="field-label" for="f-message">Message / Blessings</label>
+                <textarea class="field" id="f-message" name="message" rows="3" placeholder="Share your wishes for the couple…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold w-full justify-center text-base py-3">Send My Response ❤️</button>
+              <p class="text-center text-ink/50 text-xs">Your response is saved privately on this device.</p>
+            </div>
+          </form>
+
+          <!-- Thank you -->
+          <div id="rsvpThanks" style="display:none" class="text-center py-6">
+            <div class="text-5xl mb-3">🤍</div>
+            <h3 class="font-script text-primary text-4xl mb-2">Thank you, <span id="thanksName">friend</span>!</h3>
+            <p class="text-secondary font-display text-xl">Thank you for your response ❤️</p>
+            <p class="text-ink/70 mt-2">We can't wait to celebrate this beautiful day with you.</p>
+            <div class="mt-5 flex flex-wrap justify-center gap-3">
+              <button class="btn btn-outline" data-action="calendar" type="button">Add to Calendar</button>
+              <button class="btn btn-outline" data-action="whatsapp" type="button">Share on WhatsApp</button>
+              <button id="rsvpAgain" class="btn" type="button">Respond Again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QR + SHARE ===================== -->
+    <section id="qr" class="px-5 py-12 md:py-16">
+      <div class="max-w-lg mx-auto text-center card p-8 md:p-12" data-aos="fade-up">
+        <p class="eyebrow text-gold mb-2">Find Your Way</p>
+        <h2 class="section-title text-2xl md:text-3xl mb-6">Scan for Location</h2>
+        <a class="qr-frame mx-auto"
+           href="https://www.google.com/maps/search/?api=1&query=St%20John%20The%20Baptist%20Jacobite%20Syrian%20Church%20Attamangalam%20Kumarakom%20Kerala"
+           target="_blank" rel="noopener" aria-label="Open the wedding location in Google Maps">
+          <img src="images/qr.svg" alt="QR code linking to the wedding venue on Google Maps" width="180" height="180" loading="lazy" />
+        </a>
+        <p class="text-ink/60 mt-4 text-sm">Point your camera at the code to open directions to the church.</p>
+
+        <div class="divider mt-6" aria-hidden="true"><span class="line"></span><span class="diamond"></span><span class="line right"></span></div>
+
+        <p class="text-secondary font-display text-lg mb-3">Share this invitation</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <button class="btn" style="--btn-bg:#25D366;--btn-fg:#fff" data-action="whatsapp" type="button">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.24 8.24 0 0 1-1.26-4.39c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.25 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43l-.48-.01c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            WhatsApp
+          </button>
+          <button class="btn btn-outline" data-action="share" type="button">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+            Share
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="px-5 pt-10 pb-28 md:pb-16 text-center">
+      <div class="max-w-xl mx-auto">
+        <div class="section-sprig mb-6" aria-hidden="true">
+          <img src="images/flowers/sprig.svg" alt="" loading="lazy" width="300" height="120" class="mx-auto" />
+        </div>
+        <p class="font-script text-primary text-4xl md:text-5xl mb-1">Meby &amp; Christy</p>
+        <p class="eyebrow text-gold mb-6">16 · 11 · 2026</p>
+
+        <p class="text-secondary font-display italic text-lg">Best Compliments From</p>
+        <p class="text-primary font-display text-2xl mb-6">Family &amp; Friends</p>
+
+        <div class="divider" aria-hidden="true"><span class="line"></span><span class="dot"></span><span class="line right"></span></div>
+        <p class="text-ink/60 text-sm mt-4">
+          Made with <span class="text-gold">❤️</span> · &copy; <span id="year">2026</span> Meby &amp; Christy
+        </p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ===================== FLOATING BUTTONS ===================== -->
+  <a id="rsvpJump" href="#rsvp" aria-label="Jump to RSVP">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 1 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>RSVP</span>
+  </a>
+
+  <button id="musicToggle" class="fab" type="button" aria-label="Play music" aria-pressed="false">
+    <svg id="musicOff" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+    <svg id="musicOn" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/><path d="M2 2l20 20"/></svg>
+  </button>
+
+  <button id="backToTop" class="fab" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ===================== TOAST ===================== -->
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

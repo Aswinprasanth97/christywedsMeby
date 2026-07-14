@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520" fill="none" role="img" aria-label="Soft blue watercolor floral bouquet">
+  <defs>
+    <radialGradient id="pBlue" cx="50%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#EAF1FC"/>
+      <stop offset="52%" stop-color="#8FB0DE"/>
+      <stop offset="100%" stop-color="#3A5F9B"/>
+    </radialGradient>
+    <radialGradient id="pLight" cx="50%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#F6FAFF"/>
+      <stop offset="58%" stop-color="#CBDBF2"/>
+      <stop offset="100%" stop-color="#6C8AC7"/>
+    </radialGradient>
+    <radialGradient id="pDeep" cx="50%" cy="40%" r="66%">
+      <stop offset="0%" stop-color="#C9DAF2"/>
+      <stop offset="55%" stop-color="#5B7FBE"/>
+      <stop offset="100%" stop-color="#183A73"/>
+    </radialGradient>
+    <radialGradient id="gold" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#F2E0B4"/>
+      <stop offset="100%" stop-color="#C8A96A"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A9C7B2"/>
+      <stop offset="100%" stop-color="#4E7C86"/>
+    </linearGradient>
+    <linearGradient id="leafDeep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7FA9AE"/>
+      <stop offset="100%" stop-color="#355E68"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+  </defs>
+
+  <g opacity="0.96">
+    <!-- Leaves / sprigs -->
+    <g filter="url(#soft)" opacity="0.9">
+      <path d="M250 470 C150 420 90 330 120 250" stroke="#5E8A8E" stroke-width="3" fill="none" opacity="0.6"/>
+      <path d="M250 470 C330 430 400 350 385 260" stroke="#5E8A8E" stroke-width="3" fill="none" opacity="0.6"/>
+      <path d="M250 470 C250 380 250 300 250 210" stroke="#5E8A8E" stroke-width="3" fill="none" opacity="0.6"/>
+      <ellipse cx="120" cy="300" rx="46" ry="20" fill="url(#leaf)" transform="rotate(-35 120 300)"/>
+      <ellipse cx="150" cy="360" rx="40" ry="17" fill="url(#leafDeep)" transform="rotate(-20 150 360)"/>
+      <ellipse cx="395" cy="300" rx="46" ry="20" fill="url(#leaf)" transform="rotate(35 395 300)"/>
+      <ellipse cx="365" cy="360" rx="40" ry="17" fill="url(#leafDeep)" transform="rotate(20 365 360)"/>
+      <ellipse cx="250" cy="250" rx="24" ry="60" fill="url(#leaf)" opacity="0.8"/>
+      <ellipse cx="200" cy="420" rx="34" ry="14" fill="url(#leafDeep)" transform="rotate(20 200 420)"/>
+      <ellipse cx="310" cy="425" rx="34" ry="14" fill="url(#leafDeep)" transform="rotate(-20 310 425)"/>
+    </g>
+
+    <!-- Buds -->
+    <g filter="url(#soft)">
+      <circle cx="140" cy="235" r="16" fill="url(#pLight)"/>
+      <circle cx="380" cy="235" r="16" fill="url(#pLight)"/>
+      <circle cx="250" cy="180" r="13" fill="url(#pDeep)"/>
+    </g>
+
+    <!-- Flower 1 (large, center) -->
+    <g transform="translate(250 300)" filter="url(#soft)">
+      <g fill="url(#pBlue)">
+        <ellipse cx="0" cy="-44" rx="26" ry="46"/>
+        <ellipse cx="0" cy="-44" rx="26" ry="46" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-44" rx="26" ry="46" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-44" rx="26" ry="46" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-44" rx="26" ry="46" transform="rotate(288)"/>
+      </g>
+      <circle r="17" fill="url(#gold)"/>
+    </g>
+
+    <!-- Flower 2 (medium, left) -->
+    <g transform="translate(160 320) scale(0.8)" filter="url(#soft)">
+      <g fill="url(#pLight)">
+        <ellipse cx="0" cy="-42" rx="24" ry="44"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(288)"/>
+      </g>
+      <circle r="15" fill="url(#gold)"/>
+    </g>
+
+    <!-- Flower 3 (medium, right) -->
+    <g transform="translate(340 320) scale(0.82)" filter="url(#soft)">
+      <g fill="url(#pDeep)">
+        <ellipse cx="0" cy="-42" rx="24" ry="44"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(288)"/>
+      </g>
+      <circle r="15" fill="url(#gold)"/>
+    </g>
+
+    <!-- Flower 4 (small, upper) -->
+    <g transform="translate(250 250) scale(0.62)" filter="url(#soft)">
+      <g fill="url(#pBlue)">
+        <ellipse cx="0" cy="-42" rx="24" ry="44"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-42" rx="24" ry="44" transform="rotate(288)"/>
+      </g>
+      <circle r="15" fill="url(#gold)"/>
+    </g>
+
+    <!-- tiny gold accents -->
+    <g fill="#C8A96A" opacity="0.85">
+      <circle cx="205" cy="245" r="4"/>
+      <circle cx="300" cy="250" r="4"/>
+      <circle cx="175" cy="380" r="4"/>
+      <circle cx="330" cy="385" r="4"/>
+    </g>
+  </g>
+</svg>
